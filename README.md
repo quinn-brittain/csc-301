@@ -1,2 +1,2 @@
-# csc-301
+# CSC-301
 Projects and Assignments from CSC-301 Web Programing
