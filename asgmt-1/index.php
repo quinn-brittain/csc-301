@@ -7,7 +7,7 @@ $school_year = "Sophomore";
 $bio = "I was born in California in 2000, moved to northern Kentucky in 2009. Started college in 2018. Hobbies include: codding, video gaming, emulation, and music. Interested in design, organization, and various types of technology.";
 $fun_fact = "I accidentally deleted this whole page when building it.";
 $picture = "img/quinn-brittain.png";
-$reasons = "The main reason I joined this course is because of degree requirement, but also because of previous web development experience.";
+$reasons = "The main reason I joined this course is because of degree requirements, but also because of previous web development experience.";
 $expectations = "To become more familiarized with PHP.";
 ?>
 <!DOCTYPE html>
