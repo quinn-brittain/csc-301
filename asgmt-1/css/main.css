@@ -6780,5 +6780,8 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #444; } }
+.media-image {
+  width: 50%;
+  height: 50%; }
 
 /*# sourceMappingURL=main.css.map */
