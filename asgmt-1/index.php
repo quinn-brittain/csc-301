@@ -4,7 +4,7 @@ $name = "Quinn Brittain";
 $email = "brittainq1@nku.edu";
 $major = "CIT & Computer Science";
 $school_year = "Sophomore";
-$bio = "I was born in California in 2000, moved to northern Kentucky in 2009. Started college in 2018. Hobbies include: codding, video gaming, emulation, and music. Interested in design, organization, and various types of technology.";
+$bio = "I was born in California in 2000, moved to northern Kentucky in 2009. Started college in 2018. Hobbies include: coding, video gaming, emulation, and music. Interested in design, organization, and various types of technology.";
 $fun_fact = "I accidentally deleted this whole page when building it.";
 $picture = "img/quinn-brittain.png";
 $reasons = "The main reason I joined this course is because of degree requirements, but also because of previous web development experience.";
@@ -36,13 +36,16 @@ $expectations = "To become more familiarized with PHP.";
           <h4 class="mt-4">Expectations for Course</h4>
           <h5 class="mt-0"><?= $expectations ?></h5>
           <h6 class="mt-5">Contact me at:</h6>
-          <a href="mailto:<?= $email?>"><?= $email?></a>
+          <a href="mailto:<?= $email ?>"><?= $email ?></a>
         </div>
       </div>
       <h1 class="display-4"><?= $name ?></h1>
       <p class="lead mb-0"><?= $major ?> - <?= $school_year ?></p>
     </div>
   </div>
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
