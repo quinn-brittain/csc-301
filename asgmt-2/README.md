@@ -1,5 +1,5 @@
 # Assignment-2
-PHP Booking.com Clone
+PHP digital game store named Spectre
 
 ---
 [Back to Assignments List](./../README.md/#assignments)

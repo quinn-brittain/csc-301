@@ -5,8 +5,7 @@ if (!isset($_GET['id'])) {
 
 $games = [
   [
-    'name' => 'Civilization VI',
-    'address' => 'null',
+    'name' => 'Sid Meier’s Civilization® VI',
     'picture' => 'img/civilization-6.jpg',
     'price' => 59.99,
     'platform' => ['fa-windows', 'fa-apple', 'fa-linux'],
@@ -14,7 +13,6 @@ $games = [
   ],
   [
     'name' => 'Temtem',
-    'address' => 'null',
     'picture' => 'img/temtem.jpg',
     'price' => 34.99,
     'platform' => ['fa-windows'],
@@ -22,7 +20,6 @@ $games = [
   ],
   [
     'name' => 'Stardew Valley',
-    'address' => 'null',
     'picture' => 'img/stardew-valley.jpg',
     'price' => 14.99,
     'platform' => ['fa-windows', 'fa-apple'],
@@ -30,7 +27,6 @@ $games = [
   ],
   [
     'name' => 'Red Dead Redemption 2',
-    'address' => 'null',
     'picture' => 'img/red-dead-redemption-2.jpg',
     'price' => 59.99,
     'platform' => ['fa-windows', 'fa-apple'],
@@ -38,7 +34,6 @@ $games = [
   ],
   [
     'name' => 'Kings',
-    'address' => 'null',
     'picture' => 'img//kings.jpg',
     'price' => 0.99,
     'platform' => ['fa-windows', 'fa-apple'],
@@ -65,17 +60,19 @@ if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games))
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
-    <a class="navbar-brand" href="#" data-ss1579982651="1">Spleen</a>
+
+    <div class="navbar-brand fas fa-ghost mr-2" style="font-size: 40px"></div>
+    <a class="navbar-brand" href="index.php" data-ss1579982651="1">Spectre</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#" data-ss1579982651="1">Home <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" data-ss1579982651="1">Features</a>
+          <a class="nav-link" href="index.php" data-ss1579982651="1">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" data-ss1579982651="1">Browse <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" data-ss1579982651="1">Pricing</a>
@@ -89,12 +86,12 @@ if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games))
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
+
   </nav>
   <main class="container">
     <h1><?= $games[$_GET['id']]['name'] ?></h1>
     <img src="<?= $games[$_GET['id']]['picture'] ?>" style="max-width:500px" />
-    <p>Address: <?= $games[$_GET['id']]['address'] ?></p>
-    <p>Price per night: <?= $games[$_GET['id']]['price'] ?></p>
+    <p>Price: $<?= $games[$_GET['id']]['price'] ?></p>
     <p>Rating: <span class="badge badge-secondary"><?= $games[$_GET['id']]['rating'] ?></span></p>
   </main>
 

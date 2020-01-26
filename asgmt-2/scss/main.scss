@@ -5,3 +5,25 @@
 @import "../fontawesome/scss/solid";
 @import "../fontawesome/scss/brands";
 @import "../fontawesome/scss/regular";
+
+.browse-game {
+    width: 100%;
+    min-width: 45rem;
+    max-height: 200px;
+
+    img {
+        max-width:300px; 
+        max-height:200px
+    }
+    
+    .rating {
+        margin-top: 1px;
+        font-size: 13px;
+        height: 13px;
+    }
+
+    .content {
+        height: 85.5px;
+    }
+
+}

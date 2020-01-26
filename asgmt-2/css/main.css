@@ -11336,4 +11336,18 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
 
+.browse-game {
+  width: 100%;
+  min-width: 45rem;
+  max-height: 200px; }
+  .browse-game img {
+    max-width: 300px;
+    max-height: 200px; }
+  .browse-game .rating {
+    margin-top: 1px;
+    font-size: 13px;
+    height: 13px; }
+  .browse-game .content {
+    height: 85.5px; }
+
 /*# sourceMappingURL=main.css.map */
