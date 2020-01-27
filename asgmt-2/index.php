@@ -2,13 +2,15 @@
 $games = [
   [
     'name' => 'Sid Meier’s Civilization® VI',
-    'summary' => 'Civilization is a turn-based strategy game in which you attempt to build an empire to stand the test of time.',
+    'summary' => 'Civilization VI offers new ways to interact with your world, expand your empire across the map, advance your culture, and compete against history’s greatest leaders to build a civilization that will stand the test of time. Play as one of 20 historical leaders including Roosevelt (America) and Victoria (England). ',
     'picture' => 'img/civilization-6.jpg',
     'release-date' => 'Oct 21, 2016',
     'price' => 59.99,
     'sale' => 75,
     'platform' => ['fa-windows', 'fa-apple', 'fa-linux'],
     'rating' => 92,
+    'developer' => 'Firaxis Games, Aspyr',
+    'publisher' => '2K, Aspyr',
     'tags' => ['Strategy', 'Turn-Based Strategy', 'Historical', '4X']
   ],
   [
@@ -20,6 +22,8 @@ $games = [
     'sale' => 0,
     'platform' => ['fa-windows'],
     'rating' => 89,
+    'developer' => 'Firaxis Games, Aspyr',
+    'publisher' => '2K, Aspyr',
     'tags' => ['Early Access', 'Massive Multiplayer', 'RPG', 'Indie']
   ],
   [
@@ -31,6 +35,8 @@ $games = [
     'sale' => 33.33,
     'platform' => ['fa-windows', 'fa-apple'],
     'rating' => 97,
+    'developer' => 'Firaxis Games, Aspyr',
+    'publisher' => '2K, Aspyr',
     'tags' => ['Farming Sim', 'Life Sim', 'RPG', 'Pixel Graphics', 'Indie']
   ],
   [
@@ -42,6 +48,8 @@ $games = [
     'sale' => 20,
     'platform' => ['fa-windows'],
     'rating' => 68,
+    'developer' => 'Firaxis Games, Aspyr',
+    'publisher' => '2K, Aspyr',
     'tags' => ['Adventure', 'Action', 'Open World', 'Master Piece']
   ],
   [
@@ -50,9 +58,11 @@ $games = [
     'picture' => 'img/kings.jpg',
     'release-date' => 'Nov 2, 2018',
     'price' => 0.99,
-    'sale' => 51,
+    'sale' => 50,
     'platform' => ['fa-windows'],
     'rating' => 35,
+    'developer' => 'Firaxis Games, Aspyr',
+    'publisher' => '2K, Aspyr',
     'tags' => ['Casual', 'Strategy', 'Indie']
   ],
   [
@@ -61,9 +71,11 @@ $games = [
     'picture' => 'img/the-district.jpg',
     'release-date' => 'Dec 10, 2017',
     'price' => 0.99,
-    'sale' => 51,
+    'sale' => 50,
     'platform' => ['fa-windows'],
     'rating' => 19,
+    'developer' => 'Firaxis Games, Aspyr',
+    'publisher' => '2K, Aspyr',
     'tags' => ['Survival', 'Indie', 'Adventure', 'Action', 'Open World']
   ]
 ];
@@ -79,7 +91,7 @@ foreach ($games as &$game) {
     $game['rating-symbol'] = 'fa-thumbs-down';
     $game['rating-color'] = 'badge-danger';
   }
-  $game['sale-price'] = round(((($game['sale'] - 100) * -1) / 100) * $game['price'], 2);
+  $game['sale-price'] = floor((($game['sale'] - 100) * -1) * $game['price']) / 100;
 }
 
 ?>
@@ -127,12 +139,18 @@ foreach ($games as &$game) {
   <main class="d-flex flex-row">
 
     <div class="container mr-0" style="width:70%; max-width:1080px">
+      <?php if (isset($_GET['error']) && $_GET['error'] == 404) : ?>
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <p class="m-0"><strong>Oh snap!</strong> It looks like that page was either moved or no longer exists.</p>
+        </div>
+      <?php endif ?>
       <?php for ($i = 0; $i < count($games); $i++) : ?>
         <a href="detail.php?id=<?= $i ?>" style="width:100%; max-height:200px">
           <section class="browse-game btn text-white btn-primary p-0 mb-3">
             <div class="card-body p-0">
               <div class="media">
-                <img src="<?= $games[$i]['picture'] ?>" class="mr-3" alt="...">
+                <img src="<?= $games[$i]['picture'] ?>" class="mr-3 rounded-left" alt="...">
                 <section class="media-body mt-2 mb-0 mr-2">
                   <h4 class="card-title text-left mb-2"><?= $games[$i]['name'] ?></h4>
                   <section class="content d-flex flex-row justify-content-between">
