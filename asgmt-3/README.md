@@ -1,7 +1,6 @@
-# Assignment-2
+# Assignment-3
 PHP digital game store named Spectre
-+ Created basic index.php
-+ Created basic detail.php
++ Added JSON data storage
 
 ---
 [Back to Assignments List](./../README.md/#assignments)

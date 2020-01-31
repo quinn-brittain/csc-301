@@ -1,0 +1,198 @@
+[
+  {
+    "name": "Sid Meier’s Civilization® VI",
+    "summary": "Civilization VI offers new ways to interact with your world, expand your empire across the map, advance your culture, and compete against history’s greatest leaders to build a civilization that will stand the test of time. Play as one of 20 historical leaders including Roosevelt (America) and Victoria (England). ",
+    "picture": "img/civilization-6.jpg",
+    "release-date": "Oct 21, 2016",
+    "price": 59.99,
+    "sale": 75,
+    "platform": [
+      "fa-windows",
+      "fa-apple",
+      "fa-linux"
+    ],
+    "rating": 92,
+    "developer": "Firaxis Games, Aspyr",
+    "publisher": "2K, Aspyr",
+    "tags": [
+      "Strategy",
+      "Turn-Based Strategy",
+      "Historical",
+      "4X"
+    ]
+  }, {
+    "name": "Temtem",
+    "summary": "",
+    "picture": "img/temtem.jpg",
+    "release-date": "Jan 21, 2020",
+    "price": 34.99,
+    "sale": 0,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 89,
+    "developer": "Firaxis Games, Aspyr",
+    "publisher": "2K, Aspyr",
+    "tags": [
+      "Early Access",
+      "Massive Multiplayer",
+      "RPG",
+      "Indie"
+    ]
+  }, {
+    "name": "Stardew Valley",
+    "summary": "",
+    "picture": "img/stardew-valley.jpg",
+    "release-date": "Feb 26, 2016",
+    "price": 14.99,
+    "sale": 33.33,
+    "platform": [
+      "fa-windows",
+      "fa-apple"
+    ],
+    "rating": 97,
+    "developer": "Firaxis Games, Aspyr",
+    "publisher": "2K, Aspyr",
+    "tags": [
+      "Farming Sim",
+      "Life Sim",
+      "RPG",
+      "Pixel Graphics",
+      "Indie"
+    ]
+  }, {
+    "name": "Red Dead Redemption 2",
+    "summary": "",
+    "picture": "img/red-dead-redemption-2.jpg",
+    "release-date": "Dec 5, 2019",
+    "price": 59.99,
+    "sale": 20,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 68,
+    "developer": "Firaxis Games, Aspyr",
+    "publisher": "2K, Aspyr",
+    "tags": [
+      "Adventure",
+      "Action",
+      "Open World",
+      "Master Piece"
+    ]
+  }, {
+    "name": "Kings",
+    "summary": "",
+    "picture": "img/kings.jpg",
+    "release-date": "Nov 2, 2018",
+    "price": 0.99,
+    "sale": 50,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 35,
+    "developer": "Firaxis Games, Aspyr",
+    "publisher": "2K, Aspyr",
+    "tags": [
+      "Casual",
+      "Strategy",
+      "Indie"
+    ]
+  }, {
+    "name": "The District",
+    "summary": "The District - action with elements of survival in the open world.",
+    "picture": "img/the-district.jpg",
+    "release-date": "Dec 10, 2017",
+    "price": 0.99,
+    "sale": 50,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 19,
+    "developer": "Firaxis Games, Aspyr",
+    "publisher": "2K, Aspyr",
+    "tags": [
+      "Survival",
+      "Indie",
+      "Adventure",
+      "Action",
+      "Open World"
+    ]
+  }, {
+    "name": "PUBG",
+    "summary": "",
+    "picture": "img/pubg.jpg",
+    "release-date": "Dec 21, 2017",
+    "price": 29.99,
+    "sale": 0,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 58,
+    "developer": "PUBG Corporation",
+    "publisher": "PUBG Corporation",
+    "tags": [
+      "Survival",
+      "Shooter",
+      "Multiplayer",
+      "Battle Royale"
+    ]
+  }, {
+    "name": "Skyrim Special Edition",
+    "summary": "",
+    "picture": "img/skyrim-special.jpg",
+    "release-date": "Oct 27, 2016",
+    "price": 39.99,
+    "sale": 0,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 97,
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "tags": [
+      "Open World",
+      "RPG",
+      "Adventure",
+      "Singleplayer"
+    ]
+  }, {
+    "name": "Age of Empires II: Definitive Edition",
+    "summary": "",
+    "picture": "img/age-of-empires-dft.jpg",
+    "release-date": "Nov 14, 2019",
+    "price": 19.99,
+    "sale": 0,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 89,
+    "developer": "Forgotten Empires, Tantalus Media",
+    "publisher": "Xbox Game Studios",
+    "tags": [
+      "Strategy",
+      "RTS",
+      "Historical",
+      "Multiplayer",
+      "Casual"
+    ]
+  }, {
+    "name": "Risk of Rain 2",
+    "summary": "",
+    "picture": "img/risk-of-rain-2.jpg",
+    "release-date": "Mar 28, 2019",
+    "price": 19.99,
+    "sale": 0,
+    "platform": [
+      "fa-windows"
+    ],
+    "rating": 95,
+    "developer": "Hopoo Games",
+    "publisher": "Gearbox Publishing",
+    "tags": [
+      "Early Access",
+      "Third-Person Shooter",
+      "Action",
+      "Loot"
+    ]
+  }
+]
