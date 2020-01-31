@@ -4,4 +4,4 @@ PHP digital game store named Spectre
 + Created basic detail.php
 
 ---
-[Back to Assignments List](./../README.md/#assignments)
+[Back to Assignments List](./../README.md/#assignments) 
