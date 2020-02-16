@@ -1,5 +1,5 @@
 <?php
-require_once('data.php')
+require_once 'data.php'
 ?>
 
 <!doctype html>
@@ -7,7 +7,7 @@ require_once('data.php')
 
 <?php
 $title = 'Welcome to Spectre';
-require_once('head.php')
+require_once 'head.php'
 ?>
 
 <body>
@@ -157,7 +157,7 @@ require_once('head.php')
   </main>
 
   <?php
-  require_once('script.php')
+  require_once 'script.php'
   ?>
 </body>
 

@@ -15,7 +15,7 @@ $games = [
     'rating' => 92,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Strategy', 'Turn-Based Strategy', 'Historical', '4X']
+    'tags' => ['Strategy', 'Turn-Based Strategy', 'Historical', '4X'],
   ],
   [
     'name' => 'Temtem',
@@ -28,7 +28,7 @@ $games = [
     'rating' => 89,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Early Access', 'Massive Multiplayer', 'RPG', 'Indie']
+    'tags' => ['Early Access', 'Massive Multiplayer', 'RPG', 'Indie'],
   ],
   [
     'name' => 'Stardew Valley',
@@ -41,7 +41,7 @@ $games = [
     'rating' => 97,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Farming Sim', 'Life Sim', 'RPG', 'Pixel Graphics', 'Indie']
+    'tags' => ['Farming Sim', 'Life Sim', 'RPG', 'Pixel Graphics', 'Indie'],
   ],
   [
     'name' => 'Red Dead Redemption 2',
@@ -54,7 +54,7 @@ $games = [
     'rating' => 68,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Adventure', 'Action', 'Open World', 'Master Piece']
+    'tags' => ['Adventure', 'Action', 'Open World', 'Master Piece'],
   ],
   [
     'name' => 'Kings',
@@ -67,7 +67,7 @@ $games = [
     'rating' => 35,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Casual', 'Strategy', 'Indie']
+    'tags' => ['Casual', 'Strategy', 'Indie'],
   ],
   [
     'name' => 'The District',
@@ -80,8 +80,8 @@ $games = [
     'rating' => 19,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Survival', 'Indie', 'Adventure', 'Action', 'Open World']
-  ]
+    'tags' => ['Survival', 'Indie', 'Adventure', 'Action', 'Open World'],
+  ],
 ];
 
 foreach ($games as &$game) {
@@ -101,7 +101,6 @@ foreach ($games as &$game) {
 if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games)) {
   header("Location: index.php?error=404");
 }
-
 
 ?>
 <!doctype html>
@@ -188,13 +187,14 @@ if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games))
       <div>
         <video src="" class="bg-secondary rounded" style="width:600px; height:337px"></video>
         <div class="rounded d-flex flex-row w-100 h-50">
-          <button type="button" class="btn btn-secondary h-25 mr-1"><</button>
-          <div class="rounded w-25 h-25 bg-secondary"></div>
-          <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
-          <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
-          <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
-          <button type="button" class="btn btn-secondary h-25 ml-1">></button>
+          <button type="button" class="btn btn-secondary h-25 mr-1">
+            <</button> <div class="rounded w-25 h-25 bg-secondary">
         </div>
+        <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
+        <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
+        <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
+        <button type="button" class="btn btn-secondary h-25 ml-1">></button>
+      </div>
       </div>
     </section>
 

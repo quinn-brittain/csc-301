@@ -11,7 +11,7 @@ $games = [
     'rating' => 92,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Strategy', 'Turn-Based Strategy', 'Historical', '4X']
+    'tags' => ['Strategy', 'Turn-Based Strategy', 'Historical', '4X'],
   ],
   [
     'name' => 'Temtem',
@@ -24,7 +24,7 @@ $games = [
     'rating' => 89,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Early Access', 'Massive Multiplayer', 'RPG', 'Indie']
+    'tags' => ['Early Access', 'Massive Multiplayer', 'RPG', 'Indie'],
   ],
   [
     'name' => 'Stardew Valley',
@@ -37,7 +37,7 @@ $games = [
     'rating' => 97,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Farming Sim', 'Life Sim', 'RPG', 'Pixel Graphics', 'Indie']
+    'tags' => ['Farming Sim', 'Life Sim', 'RPG', 'Pixel Graphics', 'Indie'],
   ],
   [
     'name' => 'Red Dead Redemption 2',
@@ -50,7 +50,7 @@ $games = [
     'rating' => 68,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Adventure', 'Action', 'Open World', 'Master Piece']
+    'tags' => ['Adventure', 'Action', 'Open World', 'Master Piece'],
   ],
   [
     'name' => 'Kings',
@@ -63,7 +63,7 @@ $games = [
     'rating' => 35,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Casual', 'Strategy', 'Indie']
+    'tags' => ['Casual', 'Strategy', 'Indie'],
   ],
   [
     'name' => 'The District',
@@ -76,8 +76,8 @@ $games = [
     'rating' => 19,
     'developer' => 'Firaxis Games, Aspyr',
     'publisher' => '2K, Aspyr',
-    'tags' => ['Survival', 'Indie', 'Adventure', 'Action', 'Open World']
-  ]
+    'tags' => ['Survival', 'Indie', 'Adventure', 'Action', 'Open World'],
+  ],
 ];
 
 foreach ($games as &$game) {

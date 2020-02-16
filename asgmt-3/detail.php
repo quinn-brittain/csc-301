@@ -3,7 +3,7 @@ if (!isset($_GET['id'])) {
   header("Location: index.php?error=404");
 }
 
-require_once('data.php');
+require_once 'data.php';
 
 if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games)) {
   header("Location: index.php?error=404");
@@ -14,7 +14,7 @@ if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games))
 <html lang="en">
 
 <?php
-  require_once('head.php')
+require_once 'head.php'
 ?>
 
 <body>
@@ -104,7 +104,7 @@ if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games))
   </main>
 
   <?php
-  require_once('script.php')
+  require_once 'script.php'
   ?>
 </body>
 
