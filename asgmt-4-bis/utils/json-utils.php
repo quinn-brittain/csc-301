@@ -1,52 +1,5 @@
 <?php
 
-$data = [
-	[
-		"name" => "Sid Meier’s Civilization® VI",
-		"summary" => "Civilization VI offers new ways to interact with your world, expand your empire across the map, advance your culture, and compete against history’s greatest leaders to build a civilization that will stand the test of time. Play as one of 20 historical leaders including Roosevelt (America) and Victoria (England). ",
-		"picture" => "img/civilization-6.jpg",
-		"release-date" => "Oct 21, 2016",
-		"price" => 59.99,
-		"sale" => 75,
-		"platform" => [
-			"fa-windows",
-			"fa-apple",
-			"fa-linux"
-		],
-		"rating" => 92,
-		"developer" => "Firaxis Games, Aspyr",
-		"publisher" => "2K, Aspyr",
-		"tags" => [
-			"Strategy",
-			"Turn-Based Strategy",
-			"Historical",
-			"4X"
-		]
-	],
-	[
-		"name" => "Sid Meier’s Civilization® VI",
-		"summary" => "Civilization VI offers new ways to interact with your world, expand your empire across the map, advance your culture, and compete against history’s greatest leaders to build a civilization that will stand the test of time. Play as one of 20 historical leaders including Roosevelt (America) and Victoria (England). ",
-		"picture" => "img/civilization-6.jpg",
-		"release-date" => "Oct 21, 2016",
-		"price" => 59.99,
-		"sale" => 75,
-		"platform" => [
-			"fa-windows",
-			"fa-apple",
-			"fa-linux"
-		],
-		"rating" => 92,
-		"developer" => "Firaxis Games, Aspyr",
-		"publisher" => "2K, Aspyr",
-		"tags" => [
-			"Strategy",
-			"Turn-Based Strategy",
-			"Historical",
-			"4X"
-		]
-	]
-];
-
 function readJSON($file, $index = null)
 {
 	$array = json_decode(file_get_contents($file), true);
