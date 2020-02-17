@@ -1,0 +1,73 @@
+@import "https://fonts.googleapis.com/css?family=Orbitron";
+
+body {
+    background-color: #086060;
+    font: 1em orbitron;
+}
+
+h1 {
+    color: #101720;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 4rem;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* border: 3px solid green; */
+}
+
+button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    font: 1em orbitron;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 1.5rem 2.25rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    color: #101720;
+    background-color: #158CBA;
+    border-color: #158CBA;
+}
+
+button:hover {
+    color: #101720;
+    background-color: #117298;
+    border-color: #106a8c;
+}
+
+button:focus {
+    color: #101720;
+    background-color: #117298;
+    border-color: #106a8c;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 157, 196, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(56, 157, 196, 0.5);
+}
+
+.csv {
+    float: left;
+}
+
+.json {
+    float: right;
+}
