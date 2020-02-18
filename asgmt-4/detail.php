@@ -3,7 +3,9 @@ if (!isset($_GET['id'])) {
   header("Location: index.php?error=404");
 }
 
-require_once 'data.php';
+require_once './utils/json-utils.php';
+require_once 'games.php';
+require_once 'reviews.php';
 
 if (!is_numeric($_GET['id']) || $_GET['id'] < 0 || $_GET['id'] >= count($games)) {
   header("Location: index.php?error=404");
@@ -49,12 +51,13 @@ require_once 'head.php'
   </nav>
   <main class="container">
 
-    <h2><?= $games[$_GET['id']]['name'] ?></h2>
-    <section class="card pb-3 d-flex flex-row justify-content-between">
+    <h2><?= $game['title'] ?></h2>
+    <section class="card pb-3 mb-3 d-flex flex-row justify-content-between">
+
       <div class="mr-3" style="height:100%">
-        <img src="<?= $games[$_GET['id']]['picture'] ?>" class="w-100 rounded"></img>
+        <img src="<?= $game['picture'] ?>" class="w-100 rounded"></img>
         <div class="ml-3 mt-2">
-          <p class=""><?= $games[$_GET['id']]['summary'] ?></p>
+          <p class=""><?= $game['summary'] ?></p>
           <hr class="my-4">
           <section class="d-flex flex-row mb-2">
             <div class="mr-3">
@@ -64,19 +67,19 @@ require_once 'head.php'
               <p class="mb-0">Publisher:</p>
             </div>
             <div>
-              <div class="badge <?= $games[$_GET['id']]['rating-color'] ?> d-inline-flex flex-row p-1 mt-1 mb-3">
-                <i class="rating fas mr-1 <?= $games[$_GET['id']]['rating-symbol'] ?>"></i>
-                <p class="rating mb-0"><?= $games[$_GET['id']]['rating'] ?>%</p>
+              <div class="badge <?= $game['rating-color'] ?> d-inline-flex flex-row p-1 mt-1 mb-3">
+                <i class="rating fas mr-1 <?= $game['rating-symbol'] ?>"></i>
+                <p class="rating mb-0"><?= $game['rating'] ?>%</p>
               </div>
-              <p class="mb-3"><?= $games[$_GET['id']]['release-date'] ?></p>
-              <p class="mb-0"><?= $games[$_GET['id']]['developer'] ?></p>
-              <p class="mb-0"><?= $games[$_GET['id']]['publisher'] ?></p>
+              <p class="mb-3"><?= $game['release-date'] ?></p>
+              <p class="mb-0"><?= $game['developer'] ?></p>
+              <p class="mb-0"><?= $game['publisher'] ?></p>
             </div>
           </section>
           <p class="mb-0">Common User Tags:</p>
           <?php
           $j = 0;
-          foreach ($games[$_GET['id']]['tags'] as &$tag) :
+          foreach ($game['tags'] as &$tag) :
           ?>
             <?php if (4 >= $j && $j >= 0) : ?>
               <span class="badge badge-pill badge-secondary"><?= $tag ?></span>
@@ -99,8 +102,17 @@ require_once 'head.php'
         <button type="button" class="btn btn-secondary h-25 ml-1">></button>
       </div>
       </div>
-    </section>
 
+    </section>
+    <?php
+    $user = 'user'; // TODO Add users
+    $owned = true; // TODO Add ownership to users
+    if ($owned && !isset($reviews[$user])) {
+      require 'review-write-container.php';
+    } else if ($owned && isset($reviews[$user])) {
+      require 'review-container.php';
+    }
+    ?>
   </main>
 
   <?php

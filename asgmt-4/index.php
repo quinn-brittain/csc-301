@@ -1,5 +1,5 @@
 <?php
-require_once 'data.php'
+require_once 'games.php'
 ?>
 
 <!doctype html>
@@ -51,12 +51,12 @@ require_once 'head.php'
       <?php endif ?>
       <?php for ($i = 0; $i < count($games); $i++) : ?>
         <a href="detail.php?id=<?= $i ?>" style="width:100%; max-height:200px">
-          <section class="browse-game btn text-white btn-primary p-0 mb-3">
+          <section class="browse_game btn text-white btn-primary p-0 mb-3">
             <div class="card-body p-0">
               <div class="media">
                 <img src="<?= $games[$i]['picture'] ?>" class="mr-3 rounded-left" alt="...">
                 <section class="media-body mt-2 mb-0 mr-2">
-                  <h4 class="card-title text-left mb-2"><?= $games[$i]['name'] ?></h4>
+                  <h4 class="card-title text-left mb-2"><?= $games[$i]['title'] ?></h4>
                   <section class="content d-flex flex-row justify-content-between">
                     <div class="d-flex flex-column text-left justify-content-between">
                       <div>

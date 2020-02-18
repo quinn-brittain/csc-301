@@ -6,16 +6,16 @@
 @import "../fontawesome/scss/brands";
 @import "../fontawesome/scss/regular";
 
-.browse-game {
+.browse_game {
     width: 100%;
     min-width: 45rem;
     max-height: 200px;
 
     img {
-        max-width:300px; 
-        max-height:200px
+        max-width: 300px;
+        max-height: 200px
     }
-    
+
     .rating {
         margin-top: 1px;
         font-size: 13px;
@@ -26,4 +26,17 @@
         height: 85.5px;
     }
 
+}
+
+.review_container {
+    form {
+        width: 100%;
+
+        textarea {
+            resize: both;
+            width: 100%;
+            height: 150px;
+            max-width: 100%;
+        }
+    }
 }
