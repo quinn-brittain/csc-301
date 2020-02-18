@@ -31,34 +31,34 @@ require_once 'head.php'
     <?php
     //CSV
     echo "---CSV Test---\n";
-    writeAllCSV('test.csv', $test);
-    print_r(readCSV('test.csv'));
-    writeCSV('test.csv', $testWrite);
+    writeAllCSV('./data/test.csv', $test);
+    print_r(readCSV('./data/test.csv'));
+    writeCSV('./data/test.csv', $testWrite);
     echo "---After Single Add---\n";
-    print_r(readCSV('test.csv'));
-    deleteCSV('test.csv', 3);
+    print_r(readCSV('./data/test.csv'));
+    deleteCSV('./data/test.csv', 3);
     echo "---After Delete---\n";
-    print_r(readCSV('test.csv'));
-    modifyCSV('test.csv', 2, $testMod);
+    print_r(readCSV('./data/test.csv'));
+    modifyCSV('./data/test.csv', 2, $testMod);
     echo "---After Mod---\n";
-    print_r(readCSV('test.csv'));
+    print_r(readCSV('./data/test.csv'));
     ?>
     </pre>
     <pre class="json">
     <?php
     //JSON
     echo "---JSON Test---\n";
-    writeAllJSON('test.json', $test);
-    print_r(readJSON('test.json'));
-    writeJSON('test.json', $testWrite);
+    writeAllJSON('./data/test.json', $test);
+    print_r(readJSON('./data/test.json'));
+    writeJSON('./data/test.json', $testWrite);
     echo "---After Single Add---\n";
-    print_r(readJSON('test.json'));
-    deleteJSON('test.json', 3);
+    print_r(readJSON('./data/test.json'));
+    deleteJSON('./data/test.json', 3);
     echo "---After Delete---\n";
-    print_r(readJSON('test.json'));
-    modifyJSON('test.json', 2, $testMod);
+    print_r(readJSON('./data/test.json'));
+    modifyJSON('./data/test.json', 2, $testMod);
     echo "---After Mod---\n";
-    print_r(readJSON('test.json'));
+    print_r(readJSON('./data/test.json'));
     ?>
     </pre>
   </main>
