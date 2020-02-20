@@ -3,15 +3,27 @@
 require_once './utils/json-utils.php';
 require_once 'games.php';
 
-$dataDir = "./data/games/$game[name]";
+$reviewFile = "$dataDir/reviews.json";
 
-if (file_exists("$dataDir/reviews.json")) {
-  $reviews = readJSON("$dataDir/reviews.json");
+if (file_exists($reviewFile)) {
+  $reviews = readJSON($reviewFile);
 } else if (file_exists("$dataDir")) {
-  writeAllJSON("$dataDir/reviews.json", null);
-  $reviews = readJSON("$dataDir/reviews.json");
+  writeAllJSON($reviewFile, []);
+  $reviews = readJSON($reviewFile);
 } else {
   mkdir("$dataDir", 0777, true);
-  writeAllJSON("$dataDir/reviews.json", null);
-  $reviews = readJSON("$dataDir/reviews.json");
+  writeAllJSON($reviewFile, []);
+  $reviews = readJSON($reviewFile);
+}
+
+if ($reviews == null) {
+  $reviews = [];
+}
+
+function getReview($reviews, $user) {
+  foreach ($reviews as &$review) {
+    if ($review['user'] == $user) {
+      return $review;
+    }
+  }
 }

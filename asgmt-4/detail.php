@@ -107,14 +107,7 @@ require_once 'head.php'
     <?php
     $user = 'user'; // TODO Add users
     $owned = true; // TODO Add ownership to users
-    if (!($_POST == null)) {
-      echo 'Posted';
-    }
-    if ($owned && !isset($reviews[$user])) {
-      require 'review-write-container.php';
-    } else if ($owned && isset($reviews[$user])) {
-      require 'review-container.php';
-    }
+    require 'review-container.php';
     echo '<pre>';
     print_r($_POST);
     ?>

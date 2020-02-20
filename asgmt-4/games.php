@@ -20,4 +20,5 @@ foreach ($games as &$game) {
 if (isset($_GET['id'])) {
     $game = $games[$_GET['id']];
     $title = $game['name'];
+    $dataDir = "./data/games/$game[name]";
 }
