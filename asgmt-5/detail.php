@@ -81,7 +81,7 @@ require_once 'head.php'
 
     </section>
     <?php
-    $user = 'user'; // TODO Add users
+    $user = $_SESSION['user'];
     $owned = true; // TODO Add ownership to users
     require 'review-container.php';
     ?>

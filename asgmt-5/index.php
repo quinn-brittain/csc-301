@@ -13,7 +13,7 @@ require_once 'head.php'
 <body>
   <?php 
   $page = 'home';
-  require 'nav.php' 
+  require 'nav.php';
   ?>
 
   <main class="d-flex flex-row">

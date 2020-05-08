@@ -1,4 +1,7 @@
-<?php if (!isset($page)) $page = 'home' ?>
+<?php 
+require_once('lib_auth.php');
+if (!isset($page)) $page = 'home' 
+?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
 
 <div class="navbar-brand fas fa-ghost mr-2" style="font-size: 40px"></div>
@@ -15,15 +18,19 @@
       <a class="nav-link" href="#" data-ss1579982651="1">Browse <?php if ($page == 'browse') echo '<span class="sr-only">(current)' ?></a>
     </li>
     <li class="nav-item <?php if ($page == 'pricing') echo 'active' ?>">
-      <a class="nav-link" href="#" data-ss1579982651="1">Pricing <?php if ($page == 'pricing') echo '<span class="sr-only">(current)' ?></a>
+      <a class="nav-link" href="#" data-ss1579982651="1">Community <?php if ($page == 'community') echo '<span class="sr-only">(current)' ?></a>
     </li>
     <li class="nav-item <?php if ($page == 'about') echo 'active' ?>">
       <a class="nav-link" href="#" data-ss1579982651="1">About <?php if ($page == 'about') echo '<span class="sr-only">(current)' ?></a>
     </li>
   </ul>
   <div class="pr-5">
-    <a class="pr-3" href="sign-in.php">Sign In</a>
-    <a href="sign-up.php">Sign Up</a>
+    <?php if(!is_logged('user/uID')) : ?>
+      <a class="pr-3" href="sign-in.php">Sign In</a>
+      <a href="sign-up.php">Sign Up</a>
+    <?php else : ?>
+      <a href="sign-out.php">Sign Out</a>
+    <?php endif ?>
   </div>
   <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="text" placeholder="Search">

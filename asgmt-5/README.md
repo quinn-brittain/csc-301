@@ -1,8 +1,8 @@
-# Assignment-4
+# Assignment-5
 PHP digital game store named Spectre
-+ Added create.php form that enables users to create a new entity
-+ Added edit.php form that enables users to edit an existing entity
-+ Added delete.php page that shows a confirmation message and deletes the record from the data source
++ Added sign-up.php form that enables users to create a new account
++ Added sign-in.php form that enables users to sign in to an existing account
++ Added sign-out.php form that enables users to sign out of their session
 
 ---
 [Back to Assignments List](./../README.md/#assignments)
