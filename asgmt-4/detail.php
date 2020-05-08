@@ -93,8 +93,8 @@ require_once 'head.php'
       <div>
         <video src="" class="bg-secondary rounded" style="width:600px; height:337px"></video>
         <div class="rounded d-flex flex-row w-100 h-50">
-          <button type="button" class="btn btn-secondary h-25 mr-1">
-            <</button> <div class="rounded w-25 h-25 bg-secondary">
+          <button type="button" class="btn btn-secondary h-25 mr-1"><</button> 
+          <div class="rounded w-25 h-25 bg-secondary">
         </div>
         <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
         <div class="rounded ml-1 w-25 h-25 bg-secondary"></div>
@@ -108,9 +108,84 @@ require_once 'head.php'
     $user = 'user'; // TODO Add users
     $owned = true; // TODO Add ownership to users
     require 'review-container.php';
-    echo '<pre>';
-    print_r($_POST);
     ?>
+    <section class="d-flex flex-row">
+      <div class="container mr-0 pl-0" style="width:70%; max-width:1080px">
+        <section class="card mb-3 d-flex flex-column justify-content-between">
+          <div class="card-header d-flex flex-row justify-content-between">
+            <h4 class="pt-1">Customer Reviews</h4>
+          </div>
+        </section>
+        <?php foreach ($reviews as &$review) : ?>
+          <?php if (isset($user) && $review['user'] == $user) continue ?>
+          <section class="card mb-3 d-flex flex-column justify-content-between">
+            <div class="pl-3 pr-3">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="d-inline-flex flex-row pt-4 pb-1">
+                    <?php if ($review['raiting']) : ?>
+                      <span class="badge badge-success"><i class="fas fa-thumbs-up h4 m-1"></i></span>
+                    <?php else : ?>
+                      <span class="badge badge-danger"><i class="fas fa-thumbs-down h4 m-1"></i></span>
+                    <?php endif ?>
+                  <h4 class="ml-2 mt-1">
+                    <?php 
+                      if ($review['raiting']) { 
+                        echo 'Recomended'; 
+                      } else {
+                        echo 'Not Recomended'; 
+                      }
+                    ?>
+                  </h4>
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="bg-secondary mt-2" style="width: 32px; height: 32px"></div>
+                  <h5 class="pt-1 mb-0"><?= $review['user'] ?></h5>
+                </div>
+              </div>
+              <hr class="p-0 m-2">
+              <div class="pl-1 pr-1">
+                <p class="text-muted mt-1 mb-1 font-weight-bold small">POSTED: <?= $review['date']['month'].' '.$review['date']['mday'].', '.$review['date']['year']?></p>
+                <p><?= $review['reviewBody'] ?></p>
+              </div>
+            </div>
+          </section>
+        <?php endforeach ?>
+      </div>
+      <div class="container ml-0 mb-3 pr-0 pl-0" style="width:400px">
+        <div class="card mb-3">
+          <h3 class="card-header">Card header</h3>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link" data-ss1579982651="1">Card link</a>
+            <a href="#" class="card-link" data-ss1579982651="1">Another link</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link" data-ss1579982651="1">Card link</a>
+            <a href="#" class="card-link" data-ss1579982651="1">Another link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   </main>
 
   <?php

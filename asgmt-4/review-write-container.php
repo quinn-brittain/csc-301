@@ -16,10 +16,10 @@
       <div class="d-flex flex-row">
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-outline-success rounded mr-3">
-            <input required type="radio" name="rating" id="yes" value="true" autocomplete="off"><i class="fas fa-thumbs-up mr-2"></i>Yes
+            <input required type="radio" name="rating" id="yes" value=true autocomplete="off"><i class="fas fa-thumbs-up mr-2"></i>Yes
           </label>
           <label class="btn btn-outline-danger rounded">
-            <input required type="radio" name="rating" id="no" value="false" autocomplete="off"><i class="fas fa-thumbs-down mr-2"></i>No
+            <input required type="radio" name="rating" id="no" value=false autocomplete="off"><i class="fas fa-thumbs-down mr-2"></i>No
           </label>
         </div>
       </div>

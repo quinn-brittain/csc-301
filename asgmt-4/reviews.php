@@ -27,3 +27,14 @@ function getReview($reviews, $user) {
     }
   }
 }
+
+function getReviewIndex($reviews, $user) {
+  $index = 0;
+  foreach ($reviews as &$review) {
+    if ($review['user'] == $user) {
+      return $index;
+    }
+    $index++;
+  }
+  return null;
+}
