@@ -22,8 +22,8 @@
     </li>
   </ul>
   <div class="pr-5">
-    <a class="pr-3" href="sign-in.php">Sign in</a>
-    <a href="sign-up.php">Sign up</a>
+    <a class="pr-3" href="sign-in.php">Sign In</a>
+    <a href="sign-up.php">Sign Up</a>
   </div>
   <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="text" placeholder="Search">
