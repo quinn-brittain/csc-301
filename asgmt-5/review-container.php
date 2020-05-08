@@ -3,7 +3,7 @@
 require_once './utils/json-utils.php';
 require_once 'reviews.php';
 
-if ($user && $owned) {
+if (isset($user) && ($user && $owned)) {
   if (!isset($review)) {
     $review = getReview($reviews, $user);
   }

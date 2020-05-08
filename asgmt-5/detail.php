@@ -81,8 +81,10 @@ require_once 'head.php'
 
     </section>
     <?php
+    if (isset($_SESSION['user'])) {
     $user = $_SESSION['user'];
     $owned = true; // TODO Add ownership to users
+    }
     require 'review-container.php';
     ?>
     <section class="d-flex flex-row">
@@ -113,7 +115,7 @@ require_once 'head.php'
                     ?>
                   </h4>
                 </div>
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column align-items-end">
                   <div class="bg-secondary mt-2" style="width: 32px; height: 32px"></div>
                   <h5 class="pt-1 mb-0"><?= $review['user'] ?></h5>
                 </div>

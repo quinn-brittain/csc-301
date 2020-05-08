@@ -24,7 +24,7 @@
           ?>
         </h4>
       </div>
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column align-items-end">
         <div class="bg-secondary mt-2" style="width: 32px; height: 32px"></div>
         <h5 class="pt-1 mb-0"><?= $review['user'] ?></h5>
       </div>
