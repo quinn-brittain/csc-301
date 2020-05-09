@@ -1,0 +1,21 @@
+[
+    {
+        "user": "QQQQ",
+        "raiting": true,
+        "commentsAllowed": true,
+        "date": {
+            "seconds": 28,
+            "minutes": 31,
+            "hours": 1,
+            "mday": 9,
+            "wday": 6,
+            "mon": 5,
+            "year": 2020,
+            "yday": 129,
+            "weekday": "Saturday",
+            "month": "May",
+            "0": 1588980688
+        },
+        "reviewBody": "REview test review text REview test review text REview test review text REview test review text REview test review text REview test review text REview test review text REview test review text"
+    }
+]
