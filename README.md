@@ -9,3 +9,22 @@ Projects and Assignments from CSC-301 Web Programing
     - [Assignment-4-Bis](./asgmt-4-bis "asgmt-4-bis") - CSV/JSON Database Management System
 5. [Assignment-5](./asgmt-5 "asgmt-5") - Login Management
 6. [Assignment-6](./asgmt-6 "asgmt-6") - Static and Dynamic Classes
+7. [Assignment-7](./asgmt-7 "asgmt-7") - Entity Relationship Model
+8. [Assignment-8](./asgmt-6 "asgmt-8") - ER Database Implementation
+
+## Spectre E-Game Store
+
+![](spectre.png)
+
+An online game store that allows users to post reviews and publishers to add games.
+
+
+
+
+
+
+
+
+---
+
+~~SPectre ONline Games & Entertainment Shop~~
